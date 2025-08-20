@@ -100,6 +100,7 @@ class _OtpTextFormFieldState extends State<OtpTextFormField> {
           if (value.isEmpty) {
             return;
           }
+
           if (value.length > 1) {
             widget.controller?.text = value[0];
             widget.controller?.selection = TextSelection.collapsed(offset: 1);

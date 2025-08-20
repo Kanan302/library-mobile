@@ -1,49 +1,44 @@
 import 'package:flutter/material.dart';
 
-class UiValidators {
-  static String? isEmpty(String? value) {
-    if (value == null || value.isEmpty) {
-      return "E-poçt ünvanınızı daxil edin";
-    }
-    return null;
-  }
+import 'ui_strings.dart';
 
+class UiValidators {
   static String? writeMail(String? value) {
     if (value == null || value.isEmpty) {
-      return "E-poçt boş ola bilməz";
+      return UiStrings.emailCannotBeEmpty;
     }
     if (!value.contains('@')) {
-      return "E-poçt ünvanında '@' işarəsi olmalıdır";
+      return UiStrings.emailMustContainAt;
     }
     return null;
   }
 
   static String? writePassword(String? value) {
     if (value == null || value.isEmpty) {
-      return "Şifrənizi daxil edin";
+      return UiStrings.passwordCannotBeEmpty;
     }
     if (value.length < 6) {
-      return "Şifrə ən azı 6 simvoldan ibarət olmalıdır";
+      return UiStrings.passwordTooShort;
     }
     return null;
   }
 
   static String? confirmPassword(String? value, TextEditingController passwordController) {
     if (value == null || value.isEmpty) {
-      return "Şifrənizi daxil edin";
+      return UiStrings.passwordCannotBeEmpty;
     }
     if (value.length < 6) {
-      return "Şifrə ən azı 6 simvoldan ibarət olmalıdır";
+      return UiStrings.passwordTooShort;
     }
     if (value != passwordController.text) {
-      return "Şifrələr eyni deyil";
+      return UiStrings.passwordsDoNotMatch;
     }
     return null;
   }
 
   static String? writeOtp(String? value) {
     if (value == null || value.isEmpty) {
-      return "Sahə mütləqdir";
+      return UiStrings.requiredField;
     }
     return null;
   }

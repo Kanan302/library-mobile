@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+import 'app/app.dart';
+import 'shared/services/injection/di.dart';
+
+Future<void> main() async {
+  await init();
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const App();
+  }
+}

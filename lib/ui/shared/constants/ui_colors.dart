@@ -12,4 +12,7 @@ class UiColors {
   static const Color softGray = Color(0xFF9D9898);
   static const Color graphiteGray = Color(0XFF747688);
   static const Color warmGray = Color(0XFFE4DFDF);
+  static const Color background = Color(0xFFE8EBF0);
+  static const Color black54 = Colors.black54;
+  static const Color white70 = Colors.white70;
 }

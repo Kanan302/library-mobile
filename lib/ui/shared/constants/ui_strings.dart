@@ -7,6 +7,7 @@ class UiStrings {
   static const String passwordTooShort = "Şifrə ən azı 6 simvoldan ibarət olmalıdır";
   static const String passwordsDoNotMatch = "Şifrələr eyni deyil";
   static const String requiredField = "Sahə mütləqdir";
+  static const String dataNotFound = "Məlumat tapılmadı";
 
   // auth
   static const String login = "Daxil olun";
@@ -24,4 +25,20 @@ class UiStrings {
   static const String yourNewPassword = "Yeni şifrəniz";
   static const String confirmYourNewPassword = "Yeni şifrənizi təkrarlayın";
   static const String writeYourNewPassword = "Yeni şifrənizi daxil edin";
+
+  // home
+  static const String books = "Kitablar";
+  static const String categories = "Kateqoriyalar";
+  static const String authors = "Yazıçılar";
+  static const String profile = "Profil";
+  static const String search = "Axtar...";
+  static const String delete = "Sil";
+
+  // books
+  static const String aboutBook = "Kitab haqqında";
+  static const String bookNotFound = "Kitab tapılmadı";
+
+  // authors
+  static const String aboutAuthor = "Yazıçı haqqında";
+  static const String authorNotFound = "Yazıçı tapılmadı";
 }
